@@ -10,7 +10,7 @@ export default async function migrations(request, response){
     });
   }
 
-  let dbClient;
+  let dbClient; 
 
   try{
     dbClient = await database.getNewClient();
@@ -38,7 +38,6 @@ export default async function migrations(request, response){
       if(migrations.length > 0 ){
         return response.status (200).json(migratedMigrations);
       }
-      
       return response.status (200).json(migratedMigrations);
     }
 
