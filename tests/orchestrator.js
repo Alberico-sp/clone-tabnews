@@ -16,6 +16,9 @@ async function waitForAllServices(){
         throw Error();
       }
     }
+
+      const responseBody = await response.json();
+    }
   }
 }
 
